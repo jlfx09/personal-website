@@ -1,0 +1,467 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+
+  .logo {
+    font-size: 32px;
+  }
+  
+
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+
+  .large-content {
+    display: flex;
+    justify-content: space-between; /* Add space between left and right containers */
+    align-items: center;
+}
+
+.left-container {
+    flex: 1; /* Occupy available space in the left container */
+    padding: 0 20px; /* Add some padding to the left container */
+    padding-top: 100px;
+}
+
+.right-container {
+    flex: 1; /* Occupy available space in the right container */
+    text-align: right; /* Align the image and text to the right in the right container */
+    padding-right: 20px;
+    padding-top: 100px;
+}
+
+.font-large {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    color: black;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.secondary-font {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    color: black;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.third-font {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    color: black;
+    justify-content: space-between;
+    padding-left: 50px;
+    line-height: 32px;
+    font-style: italic;
+}
+
+.image {
+    max-width: 25%;
+    max-height: 25%;
+}
+  
+.footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.fourth-font {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: black;
+    justify-content: space-between;
+    padding-left: 150px;
+    line-height: 32px;
+    font-style: italic;
+}
+
+
+  /* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+   .menu {
+      display:none;
+      position: absolute;
+      background-color:teal;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+    }
+  
+    .menu li:hover {
+      display: inline-block;
+      background-color:#4c9e9e;
+      transition: 0.3s ease;
+    }
+  
+    .menu li + li {
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+}/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+
+.logo {
+  font-size: 32px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: teal;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.large-content {
+  position: relative;
+  text-align: justify;
+  padding: 100px 0;
+  justify-content: center;
+}
+
+.font-large {
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+  color: black;
+  padding-left: 150px;
+  margin-right: 50px;
+}
+
+.secondary-font {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  color: black;
+  padding-left: 150px;
+  margin-right: 50px;
+}
+
+.text h1 {
+  font-size: 28px;
+  
+}
+
+.third-font {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  color: black;
+  padding-left: 150px;
+  line-height: 32px;
+  font-style: italic;
+  margin-right: 50px;
+}
+
+.content-container {
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.image {
+max-width: 25%; /* Adjust the image size as needed */
+height: 25%; /* Maintain aspect ratio */
+margin-right: 150px; /* Adjust the margin as needed to move the image closer to the text */
+border-radius: 50%;
+}
+
+.text {
+flex-grow: 1;
+}
+
+.HeadingTitle {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Maintxt {
+font-family: 'Arial', sans-serif;
+font-size: 40px;
+margin-top: 20px;
+}
+
+.ProgrammingSection {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: white; /* Adjust the background color as needed */
+
+}
+
+.ProgrammingText {
+flex: 1;
+}
+
+.ProgrammingText h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.ProgrammingText ul {
+list-style: none;
+padding: 0;
+}
+
+.ProgrammingText li {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.ProgrammingIcons {
+flex: 1;
+display: flex;
+}
+
+.ProgrammingIcons img {
+width: 40px; /* Adjust the icon size as needed */
+height: 40px;
+margin-left: 10px; /* Adjust the margin between icons as needed */
+}
+
+.newps {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+background-color: teal;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: auto; 
+}
+
+/* Remove Checkbox */
+input[type=checkbox] {
+  display: none;
+} 
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+.large-content {
+  padding: 100px 0; 
+  justify-content: center;
+}
+
+.font-large {
+  font-size: 32px; 
+  padding-left: 0; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary-font {
+  padding-top:50px;
+  font-size: 24px; 
+  padding-left: 0; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.third-font {
+  font-size: 24px; 
+  padding-left: 0; 
+  line-height: 28px; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fourth-font {
+  font-size: 16px; 
+  padding-left: 0; 
+  line-height: 28px; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-container {
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.ProgrammingSection {
+  text-align: center; 
+  justify-content: center; 
+  flex-direction: column; 
+  padding: 20px; 
+}
+
+.ProgrammingText {
+  text-align: center; 
+}
+
+.ProgrammingIcons {
+  justify-content: center; 
+}
+
+.ProgrammingIcons img {
+  margin-left: 0; 
+}
+
+.newps {
+  text-align: center; 
+  justify-content: center; 
+  flex-direction: column; 
+  padding: 20px; 
+}
+}

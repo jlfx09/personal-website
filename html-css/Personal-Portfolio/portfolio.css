@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+
+  .logo {
+    font-size: 32px;
+  }
+  
+
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    
+}
+
+.carousel-image {
+    max-width: 70%; /* Limit the width */
+    max-height: 50%; /* Limit the height */
+    border: 2px solid black;
+} 
+
+
+.carousel-text {
+    text-align: center;
+    text-align-last: center;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top:25px;
+}
+
+
+
+
+.upcoming-projects {
+  background-color: white; /* Background color for the upcoming projects section */
+  padding: 75px;
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin-top value as desired */
+}
+
+.upcoming-projects h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.upcoming-projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming-projects li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+    .menu {
+       display:none;
+       position: absolute;
+       background-color:teal;
+       right: 0;
+       left: 0;
+       text-align: center;
+       padding: 16px 0;
+     }
+   
+     .menu li:hover {
+       display: inline-block;
+       background-color:#4c9e9e;
+       transition: 0.3s ease;
+     }
+   
+     .menu li + li {
+       margin-top: 12px;
+     }
+   
+     input[type=checkbox]:checked ~ .menu {
+       display: block;
+     }
+   
+     .hamburger {
+       display: block;
+     }
+ 
+   .carousel-text {
+     justify-content: center; /* Center text horizontally */
+     align-items: center; /* Center text vertically */
+     padding-left: 10px; /* Adjust padding for even smaller screens */
+     padding-right: 10px; /* Adjust padding for even smaller screens */
+     font-size: 15px;
+   }
+ 
+   .carousel-image {
+     max-width: 50%; /* Limit the width */
+     max-height: 50%; /* Limit the height */
+     height: auto; /* Maintain aspect ratio */
+     border: 2px solid black;
+     padding-right: 10px;
+     padding-left: 10px;
+     display: block; /* Ensure the image is centered */
+     margin: 0 auto; /* Center the image horizontally */
+ } 
+   
+ .upcoming-projects {
+  background-color: white;
+  padding: 20px; /* Further adjust padding for very small screens */
+  margin-top: auto; /* Adjust the margin-top to a smaller value */
+}
+
+.upcoming-projects h2 {
+  font-size: 18px; /* Further adjust font size for very small screens */
+}
+
+.upcoming-projects li {
+  font-size: 14px; /* Further adjust font size for very small screens */
+}
+.footer {
+  background-color: teal;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+}
+ 

@@ -1,0 +1,41 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contact-item {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+
+  .contact-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .contact-bubble {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .contact-item:hover .contact-bubble {
+    display: block;
+    
+  }
+
+  .contact-item img:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }

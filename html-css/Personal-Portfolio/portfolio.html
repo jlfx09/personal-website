@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="slideshow.css">
+    <title>Portfolio Portion</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">JLPT &copy;</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="carousel-container">
+        <img src="" alt="Image" class="carousel-image" id="carousel-image">
+        <p class="carousel-text" id="carousel-text">Text for Image</p>
+    </div>
+<br><hr><br><hr>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img src="image/cert1.png" style="width:100%">
+          <div class="text">IT Essentials Certificate -- NetAcad</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img src="image/cert2.png" style="width:100%">
+          <div class="text">CCNAv7: ENSA Certificate -- NetAcad</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img src="image/cert3.png" style="width:100%">
+          <div class="text">CCNAv7: Introduction to Networks -- NetAcad</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="image/APJCNetAcad.jpg" style="width:100%">
+            <div class="text">NetAcadRiders Certificate of Participation</div>
+          </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="image/L1.jpg" style="width:100%">
+            <div class="text">CCNAv7: ENSA Letter</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="image/L2.jpg" style="width:100%">
+            <div class="text">CCNAv7: Introduction to Networks Letter</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="image/L3.jpg" style="width:100%">
+            <div class="text">IT Essentials Letter</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+            <!-- Add more span onclick here if you want to add more certificates-->
+        </div>
+        
+    <div class="upcoming-projects">
+        <h2>Upcoming Projects</h2>
+        <ul>
+            <li>Make own Responsive Website based on react.js for better interactivity</li>
+            <li>Game based on C language or existing Game Engines like UR or Unity.</li>
+            <li>Better Database using Java.</li>
+        </ul>
+    </div>
+    
+    
+
+<footer class="footer">
+    <p>&copy; 2023 jlfx09 <br> All Copyrights Reserved.</p>
+</footer>
+
+</body>
+<script src = "portfolio.js"></script>
+<script src = "slideshow.js"></script>
+</html>
+
+
